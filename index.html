@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
+    <style>
+      #resume{
+        color: orange;
+        font-weight: bolder;
+      }
+      .heading{
+        color: cadetblue;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <!-- Header Section -->
@@ -18,7 +28,7 @@
              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
              </svg> &nbsp; komalteke22@gmail.com  &nbsp; &nbsp; &nbsp;
-             <a href="assets/resume.pdf" download> 
+             <a href="assets/resume.pdf" download id="resume"> 
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
                 <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"/>
               </svg>
@@ -42,10 +52,10 @@
         <section>
         <!-- designed home section -->
       <section id="home">
-        <h2>Professional Summary</h2>
+        <h2 class="heading">Professional Summary</h2>
         <ul>
           <li>Having 1 year of experience in developing Single page application using Angular8, HTML5, CSS3 ,Bootstrap 5, Javascript , Typescript</li>
-          <li>Experience on working with version control system - Git and GitHub</li>
+          <li style="color: cadetblue;">Experience on working with version control system - Git and GitHub</li>
           <li>Experience working with JIRA for user stories and bug tracking</li>
           <li>Strong debugging & troubleshooting ode with chrome Developer tool</li>
           <li>Working exposure on ID's like VS Code and Notepad++</li>
@@ -58,7 +68,7 @@
       <hr>
 
       <section id="techStack">
-        <h2>My Technology stack is</h2>
+        <h2 class="heading">My Technology stack is</h2>
         <table border="1">
           <thead>
             <tr>
@@ -98,7 +108,7 @@
       </section>
       <hr>
       <section id="project">
-        <h2>Project Details</h2>
+        <h2 class="heading">Project Details</h2>
         <hr>
         <p><b>Name : <u>Student Management</u></b></p> 
         <p><b><u>Environment:</u></b>Angular,React,Java,Javascript,HTML,CSS,Bootstrap,Github,Agile and JIRA</p>
