@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Learning</title>
     <style>
+      #home{
+            /* border-left-style: dotted;
+            border-width: 5px;
+            border-color: red; */
+            border: 5px solid rgb(190, 187, 187);
+        }
         .icon{
             color: orangered;
             font-weight: bold;
@@ -26,6 +32,18 @@
         #heading{
             color: purple;
             font-style: italic;
+        }
+        #agile{
+            font-style: italic;
+            font-weight: bold;
+            background-color: rgb(230, 227, 227);
+        }
+        #summary{
+           font-size: larger; 
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           text-align: center;
+           text-decoration: underline;
+           text-transform: uppercase;
         }
     </style>
 </head>
@@ -58,17 +76,17 @@
 
    
         <!-- HOME Section -->
-        <section>
+        
         <!-- designed home section -->
-      <section>
-        <h2 id="heading">Professional Summary</h2>
+      <section id="home">
+        <h2 id="summary">Professional Summary</h2>
         <ul>
           <li>Having 1 year of experience in developing Single page application using Angular8, HTML5, CSS3 ,Bootstrap 5, Javascript , Typescript</li>
           <li class="list">Experience on working with version control system - Git and GitHub</li>
           <li class="list">Experience working with JIRA for user stories and bug tracking</li>
           <li>Strong debugging & troubleshooting ode with chrome Developer tool</li>
           <li class="list">Working exposure on ID's like VS Code and Notepad++</li>
-          <li>Good working experience under Agile Methodologies Environment.</li>
+          <li>Good working experience under <span id="agile">Agile Methodologies </span> Environment.</li>
           <li>Experience in using chrome developer tool for debugging and troubleshooting the code.</li>
           <li>Knowledge of NodeJS</li>
           <li id="last">Ability to work with people at all levels in the program.</li>
