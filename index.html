@@ -6,10 +6,16 @@
     <title>My Profile</title>
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <style>
       header{
         padding: 20px;
         background-color: rgb(216, 244, 245);
+        font-family: "Roboto", sans-serif;
       }
       #resume{
         color: orange;
@@ -30,24 +36,40 @@
       nav a{
         text-decoration: none;
         padding: 15px;
+        font-family: "Roboto", sans-serif;
        
       }
       /* list */
       ul li{
         padding: 8px;
+        font-family: "Poppins", sans-serif;
       }
 
       /* table */
-      td{
+      table,tr,th,td{
+        border: 2px solid rgb(231, 206, 159);
+        border-collapse: collapse;
+        font-family: "Poppins", sans-serif;
+      }
+      td,th{
         padding: 7px;
       }
+      p,section{
+        font-family: "Poppins", sans-serif;
+      }
         
+      #techTable{
+        width: 50%;
+      }
 
       /* footer */
       .fa {
         padding: 10px;
         font-size: 25px;
 
+      }
+      h2{
+        font-family: "Roboto", sans-serif;
       }
     </style>
   </head>
@@ -56,11 +78,11 @@
    <!-- Header Section -->
    <header>
     <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-    <span class="header-info">Gajanan Kharat </span> 
+    <span class="header-info">Komal Teke </span> 
     <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>  
-    <span class="header-info">8600 4086 19  </span>  
+    <span class="header-info">9021 4086 19 </span>  
     <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-    <span class="header-info">gajanan490@gmail.com </span> 
+    <span class="header-info">tekekomal37@gmail.com </span> 
     <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>        
 </header>
 
@@ -96,12 +118,12 @@
 
       <section id="techStack">
         <h2 class="heading">My Technology stack is</h2>
-        <table border="1">
+        <table id="techTable">
           <thead>
             <tr>
-              <td>Sr. No</td>
-              <td>Technology Stack</td>
-              <td>Rating</td>
+              <th>Sr. No</th>
+              <th>Technology Stack</th>
+              <th>Rating</th>
             </tr>
            
           </thead>
@@ -157,7 +179,7 @@
     <!-- Education Section -->
     <section id="education">
       <h2>Education Details</h2>
-      <table border="1">
+      <table>
         <thead>
           <tr>
             <td>Qualification</td>
