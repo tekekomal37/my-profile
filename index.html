@@ -6,72 +6,9 @@
     <title>My Profile</title>
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- Font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <style>
-      header{
-        padding: 20px;
-        background-color: rgb(216, 244, 245);
-        font-family: "Roboto", sans-serif;
-      }
-      #resume{
-        color: orange;
-        font-weight: bolder;
-      }
-      .heading{
-        color: cadetblue;
-        font-style: italic;
-      }
-      .header-info{
-        margin-right: 40px;
-        margin-left: 10px;
-      }
-      #resume-text{
-        margin-left: 10px;
-      }
-      /* navigation section */
-      nav a{
-        text-decoration: none;
-        padding: 15px;
-        font-family: "Roboto", sans-serif;
-       
-      }
-      /* list */
-      ul li{
-        padding: 8px;
-        font-family: "Poppins", sans-serif;
-      }
-
-      /* table */
-      table,tr,th,td{
-        border: 2px solid rgb(231, 206, 159);
-        border-collapse: collapse;
-        font-family: "Poppins", sans-serif;
-      }
-      td,th{
-        padding: 7px;
-      }
-      p,section{
-        font-family: "Poppins", sans-serif;
-      }
-        
-      #techTable{
-        width: 50%;
-      }
-
-      /* footer */
-      .fa {
-        padding: 10px;
-        font-size: 25px;
-
-      }
-      h2{
-        font-family: "Roboto", sans-serif;
-      }
-    </style>
+   
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <!-- Header Section -->
@@ -87,22 +24,24 @@
 </header>
 
     <!-- Navigation Section -->
-    <nav>
-        <a  href="#home">HOME</a> 
-        <a  href="#techStack">TECH STACK</a>
-        <a  href="#project">PROJECTS</a> 
-        <a  href="#education">EDUCATION</a> 
-        <a  href="personalDetail.html" target="_blank">PERSONAL DETAILS</a> 
-        <a  href="others.html" target="_blank">OTHERS</a>
+    <nav id="navSection">
+      <ul>
+        <li><a href="#home">HOME</a> </li>
+        <li><a href="#techStack">TECH STACK</a> </li>
+        <li><a href="#project">PROJECTS</a> </li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+        <li> <a href="others.html" target="_blank">OTHERS</a></li>
+      </ul>
     </nav>
 
    
         <!-- HOME Section -->
-        <section>
+        <section id="container">
         <!-- designed home section -->
       <section id="home">
         <h2 class="heading">Professional Summary</h2>
-        <ul>
+        <ul id="listSummary">
           <li>Having 1 year of experience in developing Single page application using Angular8, HTML5, CSS3 ,Bootstrap 5, Javascript , Typescript</li>
           <li style="color: cadetblue;">Experience on working with version control system - Git and GitHub</li>
           <li>Experience working with JIRA for user stories and bug tracking</li>
@@ -162,10 +101,10 @@
         <p><b>Name : <u>Student Management</u></b></p> 
         <p><b><u>Environment:</u></b>Angular,React,Java,Javascript,HTML,CSS,Bootstrap,Github,Agile and JIRA</p>
         <p><b>Team Size : </b>06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b>Duration : </b><i>2021-1 <sup>st</sup>-July till <u>present</u></i></p> 
-        <p><b>Project Description :</b> This project is mainly used for student management in colleges,where it helps to manage student record like <br> student registration,student update,and to see all the list of academic activities like score card and attendance</p>
+        <p id="projectDesc"><b>Project Description :</b> This project is mainly used for student management in colleges,where it helps to manage student record like <br> student registration,student update,and to see all the list of academic activities like score card and attendance</p>
         <hr>
         <h2>Roles and Responsibilities</h2>
-        <ul>
+        <ol class="roles">
             <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
             <li>Work closely with backend developers for code integration</li>
             <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -173,7 +112,7 @@
             <li>Used JIRA for bug tracking</li>
             <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls,sprint retrospective meetings</li>
             <li>involved in fixing technical issues in production environment</li>
-        </ul>
+        </ol>
       </section>
       <hr>
     <!-- Education Section -->
